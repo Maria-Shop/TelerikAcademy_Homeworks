@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #js-console {
+            margin: 0;
+        }
+
+        body #js-console {
+            margin: 0;
+            padding: 5px 10px;
+            background-color: black;
+            width: 800px;
+            height: 500px;
+            font-family: Consolas;
+            font-size: 18px;
+            color: white;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            word-break: break-all;
+        }
+
+        body #js-console> p {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: block;
+        }
+
+        body #js-console> p> span {
+            margin: 0;
+            padding: 0;
+        }
+
+        body #js-console> p> br {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="js-console"></div>
+    <script src="Lexicographically%20smallest.js">
+    </script>
+    <script type="text/javascript">
+        jsConsole.writeLine("Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects");
+        jsConsole.writeLine();
+
+        function getProperties(element) {
+            var elements = Object.getOwnPropertyNames(element);
+            elements.sort();
+            jsConsole.writeLine("Element " + element.toString());
+            jsConsole.writeLine("Lexicographically first: " + elements[0] + " and last: " + elements[elements.length - 1]);
+            jsConsole.writeLine();
+        }
+        getProperties(document);
+        getProperties(window);
+        getProperties(navigator);
+    </script>
+</body>
+
+</html>
