@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LinkedIn</title>
+</head>
+
+<body>
+    <header>
+        <nav><a href="#">LinkedIn</a></nav>
+    </header>
+    <nav style="text-align:center;">
+        <a href="#">Home</a> |
+        <a href="#">What is LinkedIn?</a> |
+        <a href="#">Join Today</a>
+        <a href="sign_in.html">Sign in</a>
+    </nav>
+    <main>
+        <article>
+            <h1 style="text-align:center;">Over 175 million professionals use LinkedIn to exchange informations, ideas and opportunities</h1>
+            <ul>
+                <li>Stay informed about your contacts and industry</li>
+                <li>Find the people & knowledge you need to achieve your goals</li>
+                <li>Control your proffessional identity online</li>
+            </ul>
+        </article>
+        <article>
+            <h2>Join LinkedIn Today</h2>
+            <h4 style="margin-left: 10px;">Sign up</h4>
+            <form action="#" method="post" style="margin-left: 40px;">
+                First name:
+                <br>
+                <input type="text" name="firstname">
+                <br>
+                <br>Last name:
+                <br>
+                <input type="text" name="lastname">
+                <br>
+                <br>Email:
+                <br>
+                <input type="email" name="email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b">
+                <br>
+                <br>Password:
+                <br>
+                <input type="password" name="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$">
+                <br> &nbsp; &nbsp; 8 or more characters
+                <br>
+                <br>
+                <input type="button" name="button" value="Join Now" style="margin-left: -30px;">
+            </form>
+            <p style="margin-left: 10px;">Already on LinkedIn? <a href="sign_in.html">Sign In</a></p>
+        </article>
+        <br>
+        <article>
+            <h3>Search for someone by name:</h3>
+            <form action="#" method="post" style="margin-left: 40px;">
+                First name:
+                <br>
+                <input type="text" name="firstname">
+                <br>
+                <br>Last name:
+                <br>
+                <input type="text" name="lastname">
+                <br>
+                <br>
+                <input type="button" name="button" value="Go" style="margin-left: -30px;">
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>

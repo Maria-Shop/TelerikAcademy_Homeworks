@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grid component</title>
+
+    <style>
+    input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: textfield;
+        }
+
+        select {
+            vertical-align: super;
+        }
+
+        td.tda {
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        input {
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .grad {
+            background: lavender;
+            background: -webkit-linear-gradient(lavender, gainsboro);
+            background: -o-linear-gradient(lavender, gainsboro);
+            background: -moz-linear-gradient(lavender, gainsboro);
+            background: linear-gradient(#f9f9f9, lavender);
+        }
+
+        input[type="image"] {
+            margin-bottom: 0px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <table border="1px;" style="border-collapse: collapse; border-color: #c4c4c4">
+            <tr style="background-color:#e9e9f9;">
+                <td colspan="6" style="padding-left: 3px; padding-top: 5px; padding-bottom: 5px;">
+                    Drag a column header and top it here to group by that column
+                </td>
+            </tr>
+            <tr class="grad">
+                <td class="tda">ProductID</td>
+                <td class="tda">Produсе name</td>
+                <td class="tda">Unit price</td>
+                <td class="tda">Quantity per unit</td>
+                <td class="tda">Units in stock</td>
+                <td class="tda">Discontinued</td>
+            </tr>
+            <tr style="background-color:#e9e9f9;">
+                <td style="width: 77px;">
+                    <input type="number" name="id" style="width: 25px;">
+                </td>
+                <td style="width: 262px;">
+                    <input type="text" name="name" style="width: 145px;">
+                </td>
+                <td style="width: 212px;">
+                    <input type="number" name="price" style="width: 74px;">
+                    <input type="image" alt="button" src="filter.png" width="20px" style="position: fixed; background-color: #dfe1e4;">
+                </td>
+                <td style="width: 177px;">
+                    <input type="text" name="quantity" style="width: 85px;">
+                </td>
+                <td style="width: 157px;">
+                    <input type="number" name="units" style="width: 78px;">
+                    <input type="image" alt="button" src="filter.png" width="20px" style="position: fixed; background-color: #dfe1e4;">
+                </td>
+                <td style="width: 100px;">
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: text-bottom;">
+                    <input type="image" alt="button" src="filter.png" width="20px" style="position: relative; background-color: #dfe1e4;">
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">1</td>
+                <td class="tda">Chai</td>
+                <td class="tda">$18.00</td>
+                <td class="tda">10 boxes x 20 bags</td>
+                <td class="tda">39</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">2</td>
+                <td class="tda">Chang</td>
+                <td class="tda">$19.00</td>
+                <td class="tda">24 - 12 oz bottles</td>
+                <td class="tda">13</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">3</td>
+                <td class="tda">Aniseed Syrup</td>
+                <td class="tda">$10.00</td>
+                <td class="tda">12 0 550 ml bottles</td>
+                <td class="tda">53</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">4</td>
+                <td class="tda">Chef Anton's Cajun Seasoning</td>
+                <td class="tda">$22.00</td>
+                <td class="tda">48 - 6 oz jars</td>
+                <td class="tda">53</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">5</td>
+                <td class="tda">Chef Anton's Gumbo Mix</td>
+                <td class="tda">$21.35</td>
+                <td class="tda">36 boxes</td>
+                <td class="tda">0</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" checked disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">6</td>
+                <td class="tda">Grandma's Boysenberry Spread</td>
+                <td class="tda">$25.00</td>
+                <td class="tda">12 - 8 oz jars</td>
+                <td class="tda">120</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">7</td>
+                <td class="tda">Uncle Bob's Organis Dried Pears</td>
+                <td class="tda">$30.00</td>
+                <td class="tda">12 - 1 lb pkgs.</td>
+                <td class="tda">15</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">8</td>
+                <td class="tda">Northwoods Cranberry Sauce</td>
+                <td class="tda">$40.00</td>
+                <td class="tda">12 - 12 oz jars</td>
+                <td class="tda">6</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">9</td>
+                <td class="tda">Mishi Kobe Niku</td>
+                <td class="tda">$97.00</td>
+                <td class="tda">18 - 500 g pkgs.</td>
+                <td class="tda">29</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" checked disabled>
+                </td>
+            </tr>
+            <tr>
+                <td class="tda">10</td>
+                <td class="tda">Ikura</td>
+                <td class="tda">$31.00</td>
+                <td class="tda">12 - 200 ml jars.</td>
+                <td class="tda">31</td>
+                <td>
+                    <input type="checkbox" name="dicountinued" style="width: 20px; vertical-align: inherit;" disabled>
+                </td>
+            </tr>
+            <tr class="grad">
+                <td colspan="6">
+                    <input type="image" src="1l.png" alt="button">
+                    <input type="image" src="0l.png" alt="button">
+                    <a href="#" style="text-decoration:none; vertical-align: super; border: 1px solid #d07b02;"> &nbsp;1 </a> &nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">2</a>&nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">3</a>&nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">4</a>&nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">5</a>&nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">6</a>&nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">7</a>&nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">8</a>&nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">9</a>&nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">10</a>&nbsp;
+                    <a href="#" style="text-decoration:none; vertical-align: super; color: black;">...</a>
+                    <input type="image" src="0r.png" alt="button">
+                    <input type="image" src="1r.png" alt="button"> <span style="vertical-align:super; margin-left: 20px;">Page size: </span>
+                    <select name="size">
+                        <option value="10">10</option>
+                        <option value="10">9</option>
+                        <option value="10">8</option>
+                        <option value="10">7</option>
+                        <option value="10">6</option>
+                        <option value="10">5</option>
+                      </select>
+                        <span style="margin-left: 409px; vertical-align: super;">335104 items in 33511 pages</span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

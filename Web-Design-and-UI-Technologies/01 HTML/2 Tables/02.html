@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <label for="name">Member name:</label>
+        <input id="name" type="text" name="name" required="required" style="margin: 1px; "><strong>*req</strong>
+        <br>
+        <label for="email"> Email:</label>
+        <input id="email" type="email" name="email" required="required" style="margin: 1px;" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b"><strong>*req</strong>
+        <br>
+        <label for="school">School:</label>
+        <input id="school" type="text" name="school" required="required"><strong>*req</strong>
+        <br>
+        <input type="image" src="submit.jpg" alt="Submit">
+    </form>
+</body>
+
+</html>
