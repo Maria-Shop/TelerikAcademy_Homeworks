@@ -1,0 +1,45 @@
+header{
+  color: white;
+  text-align: center;
+}
+body{
+  background: #A9A9A9;
+}
+li a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+li:nth-child(2)
+{
+  background: #D3D3D3;
+}
+li:last-child
+{
+  text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+    width: 80px;
+    padding: 0px;
+    margin: 0px;
+}
+nav {
+    text-align: -webkit-center;
+}
+h2{
+  text-align: left;
+  color:white;
+  font-size: 23px;
+}
+footer:last-of-type{
+  text-align: center;
+}
+footer p{
+  text-align: left;
+  font-size: 13px;
+}
+a{
+  text-decoration: none;
+  color:black;
+}

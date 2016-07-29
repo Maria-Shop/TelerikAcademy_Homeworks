@@ -1,0 +1,37 @@
+td.italic {
+    font-style: italic;
+    color: #ececec;
+    vertical-align: top;
+    padding-right: 30px;
+}
+body {
+    background-color: #595959;
+    font-family: Courier New;
+}
+circle {
+    cx: 50%;
+    cy: 50%;
+    r: 5;
+    fill: #71B47A
+}
+td.yellow {
+    color: #FAE99E;
+}
+td.red {
+    color: red;
+    font-weight: bold;
+}
+td.orange {
+    color: #d7691f;
+    font-weight: bold;
+}
+td.gray, p.gray {
+    color: #BBBBBB;
+}
+p.gray {
+    font-size: 25px;
+    letter-spacing: -3px;
+}
+td.padding {
+    padding-bottom: 15px;
+}

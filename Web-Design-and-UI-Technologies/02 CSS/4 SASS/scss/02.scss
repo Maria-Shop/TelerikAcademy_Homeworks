@@ -1,0 +1,22 @@
+//compileCompressed: ../css/02.css
+body {
+    padding: 10px;
+    height: 500px;
+    div {
+        .enlarge {
+            display: none;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            cursor: pointer;
+            &:hover + img {
+                display: block;
+                position: absolute;
+                top: 20%;
+                zoom: 3;
+            }
+        }
+    }
+}

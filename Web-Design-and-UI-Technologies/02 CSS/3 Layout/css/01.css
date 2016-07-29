@@ -1,0 +1,20 @@
+nav {
+    width: 200px;
+}
+ul {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+li {
+    display: none;
+}
+span:hover {
+    text-decoration: underline;
+}
+ul:hover li {
+    cursor: text;
+    display: block;
+    color: #A9A9A9;
+    text-indent: 10px;
+}

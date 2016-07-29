@@ -1,0 +1,97 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    width: 850px;
+    border: 3px solid #4f4f4f;
+    border-radius: 8px;
+    margin: 15px;
+    font-family: Corbel;
+    display: inline-block;
+}
+nav {
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 8px 0 8px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: #00ADF0;
+}
+nav ul li a:hover {
+    text-decoration: none;
+}
+hr {
+    height: 1px;
+    background-color: #4f4f4f;
+    margin: 2px 27px;
+}
+section {
+    width: 550px;
+    margin: 10px 11px;
+    border: 3px solid #4f4f4f;
+    float: left;
+    display: inline-block;
+}
+fieldset {
+    width: 258px;
+    margin: 5px 5px 5px 6px;
+    padding: 0;
+    border: 3px solid #4f4f4f;
+    font-size: 22px;
+    display: inline-block;
+}
+fieldset legend {
+    text-align: center;
+}
+fieldset div {
+    text-align: left;
+}
+.fieldset-left {
+    float: left;
+}
+img {
+    width: 135px;
+    margin: 5px 0 17px 7px;
+}
+.price {
+    margin: 0 0 7px 32px;
+}
+.fieldset-elements-right div {
+    margin-top: 18px;
+}
+.fieldset-elements-left {
+    float: left;
+}
+.fieldset-right {
+    float: left;
+}
+aside {
+    margin-right: 12px;
+    padding-top: 70px;
+    font-size: 28px;
+}
+aside div {
+    margin-top: 35px;
+}
+input[type="range"] {
+    width: 186px;
+    margin-left: 18px;
+}
+input[type="number"] {
+    border: none;
+    font-size: 20px;
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+    width: 62px;
+    background-color: white;
+    color: black;
+}

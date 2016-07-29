@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto Mono', Arial;
+}
+input[value="Listen"] {
+    background: url(../pic/listen.png);
+    color: white;
+    width: 76px;
+    height: 25px;
+}
+input[value="Add"] {
+    background: url(../pic/add.png);
+    color: white;
+    width: 63px;
+    height: 25px;
+}
+input[type="button"] {
+    border: none;
+    margin: -3px;
+    margin-top: 16px;
+}
+#parent {
+    background-color: #eeeeee;
+    width: 392px;
+    height: 527px;
+    padding: 8px 13px 10px 13px;
+    border-radius: 10px;
+}
+img {
+    float: left;
+    border: 1px solid gray;
+    margin-right: 15px;
+    width: 132px;
+}
+div.child {
+    padding: 15px 15px 15px 20px;
+    background-color: white;
+    border: 1px solid gray;
+    height: 100px;
+    margin: 36px 0;
+}
+p.text {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Slabo 27px', serif;
+    line-height: 16px;
+}
+div.buttons {
+    display: inline;
+    margin: 66px;
+}
+#music {
+    letter-spacing: -3px;
+    font-size: 19px;
+    margin: 0px 0px 37px 0px;
+}
+div.small {
+    height: 88px;
+}

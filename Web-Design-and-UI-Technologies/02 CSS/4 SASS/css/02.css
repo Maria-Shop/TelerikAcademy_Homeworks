@@ -1,0 +1,1 @@
+body{padding:10px;height:500px}body div .enlarge{display:none}body div img{width:100px;height:100px;margin-right:10px;cursor:pointer}body div img:hover+img{display:block;position:absolute;top:20%;zoom:3}

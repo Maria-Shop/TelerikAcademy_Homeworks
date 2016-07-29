@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Laptop Store</title>
+    <link href="css/05.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function updateTextInput1(val) {
+            document.getElementById('textInput1').value = val;
+        }
+
+        function updateTextInput2(val) {
+            document.getElementById('textInput2').value = val;
+        }
+
+        function updateTextInput3(val) {
+            document.getElementById('textInput3').value = val;
+        }
+
+        function updateTextInput4(val) {
+            document.getElementById('textInput4').value = val;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Toshiba</a></li>
+                    <li><a href="#">Lenovo</a></li>
+                    <li><a href="#">Dell</a></li>
+                    <li><a href="#">Asus</a></li>
+                    <li><a href="#">Acer</a></li>
+                    <li><a href="#">HP</a></li>
+                </ul>
+            </nav>
+            <hr />
+        </header>
+        <section>
+            <article>
+                <fieldset class="fieldset-left">
+                    <legend>Apple MacBook Air</legend>
+                    <div class="fieldset-elements-left">
+                        <img src="pic/laptop.png" alt="Notebook" />
+                        <div class="price">1300 USD</div>
+                    </div>
+                    <div class="fieldset-elements-right">
+                        <div>64GB SSD</div>
+                        <div>2GB DDR</div>
+                        <div>Intel Core i5</div>
+                    </div>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset class="fieldset-left">
+                    <legend>Apple MacBook Air</legend>
+                    <div class="fieldset-elements-left">
+                        <img src="pic/laptop.png" alt="Notebook" />
+                        <div class="price">1300 USD</div>
+                    </div>
+                    <div class="fieldset-elements-right">
+                        <div>64GB SSD</div>
+                        <div>2GB DDR</div>
+                        <div>Intel Core i5</div>
+                    </div>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset class="fieldset-left">
+                    <legend>Apple MacBook Air</legend>
+                    <div class="fieldset-elements-left">
+                        <img src="pic/laptop.png" alt="Notebook" />
+                        <div class="price">1300 USD</div>
+                    </div>
+                    <div class="fieldset-elements-right">
+                        <div>64GB SSD</div>
+                        <div>2GB DDR</div>
+                        <div>Intel Core i5</div>
+                    </div>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset class="fieldset-right">
+                    <legend>Apple MacBook Air</legend>
+                    <div class="fieldset-elements-left">
+                        <img src="pic/laptop.png" alt="Notebook" />
+                        <div class="price">1300 USD</div>
+                    </div>
+                    <div class="fieldset-elements-right">
+                        <div>64GB SSD</div>
+                        <div>2GB DDR</div>
+                        <div>Intel Core i5</div>
+                    </div>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset class="fieldset-right">
+                    <legend>Apple MacBook Air</legend>
+                    <div class="fieldset-elements-left">
+                        <img src="pic/laptop.png" alt="Notebook" />
+                        <div class="price">1300 USD</div>
+                    </div>
+                    <div class="fieldset-elements-right">
+                        <div>64GB SSD</div>
+                        <div>2GB DDR</div>
+                        <div>Intel Core i5</div>
+                    </div>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset class="fieldset-right">
+                    <legend>Apple MacBook Air</legend>
+                    <div class="fieldset-elements-left">
+                        <img src="pic/laptop.png" alt="Notebook" />
+                        <div class="price">1300 USD</div>
+                    </div>
+                    <div class="fieldset-elements-right">
+                        <div>64GB SSD</div>
+                        <div>2GB DDR</div>
+                        <div>Intel Core i5</div>
+                    </div>
+                </fieldset>
+            </article>
+        </section>
+        <aside>
+            <div>
+                Min price:
+                <input type="number" id="textInput1" value="500" disabled/>USD
+                <input type="range" min="1" max="999" value="500" onchange="updateTextInput1(this.value);">
+            </div>
+            <div>
+                Max price:
+                <input type="number" id="textInput2" value="1500" disabled/>USD
+                <input type="range" min="1000" max="2000" value="1500" onchange="updateTextInput2(this.value);">
+            </div>
+            <div>
+                Min RAM:
+                <input type="number" id="textInput3" value="4" disabled/>GB
+                <input type="range" min="1" max="7" value="4" onchange="updateTextInput3(this.value);">
+            </div>
+            <div>
+                Max RAM:
+                <input type="number" id="textInput4" value="16" disabled/>GB
+                <input type="range" min="8" max="24" value="16" onchange="updateTextInput4(this.value);">
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>
